@@ -61,6 +61,15 @@ Core.App.Ready(function () {
 });
 //]]></script>
 
+# Remove business modules
+<script type="text/javascript">//<![CDATA[
+"use strict";
+var el = document.getElementsByClassName("LIGEROBusiness");
+if (el.length)
+    el[0].parentElement.parentElement.parentElement.remove();
+//]]></script>
+
+
 <div id="AjaxErrorDialog">
     <div id="AjaxErrorDialogInner">
         <div class="NoConnection" style="display:none;">
