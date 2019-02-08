@@ -1,2 +1,3 @@
 site_name: LIGERO
-theme: readthedocs
+theme:
+  name: "readthedocs"
