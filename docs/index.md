@@ -85,11 +85,9 @@ A seguir descrevemos uma forma de operar este sistema. Trata-se apenas de uma su
 
 ### Fazendo login
 
-A interface de atendente é acessada através do link:
+A interface de atendente é acessada através do link:    [http://IP_DO_SERVIDOR/ligero/index.pl](http://IP_DO_SERVIDOR/ligero/index.pl)
 
-
-
-
+Através deste link, será exibida uma tela onde o atendente deverá inserir o seu login e senha e clicar no botão "login".
 
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
