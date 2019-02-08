@@ -89,6 +89,8 @@ A interface de atendente é acessada através do link:    [http://IP_DO_SERVIDOR
 
 Através deste link, será exibida uma tela onde o atendente deverá inserir o seu login e senha e clicar no botão "login".
 
+![]
+
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
 
