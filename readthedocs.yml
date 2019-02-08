@@ -5,3 +5,9 @@ python:
   install:
      - method: pip
        path: .
+
+formats: all
+
+mkdocs:
+  configuration: mkdocs.yml
+  fail_on_warning: false
