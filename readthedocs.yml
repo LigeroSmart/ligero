@@ -1,13 +1,5 @@
 version: 2
 
-python:
-  version: 3.7
-  install:
-     - method: pip
-       path: .
-
-formats: all
-
 mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
