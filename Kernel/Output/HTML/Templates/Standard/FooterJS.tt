@@ -67,6 +67,17 @@ Core.App.Ready(function () {
 var el = document.getElementsByClassName("LIGEROBusiness");
 if (el.length)
     el[0].parentElement.parentElement.parentElement.remove();
+var arr = document.getElementsByClassName("LIGEROBusinessRequired");
+if (arr.length) {
+    for (var i = 0; i<arr.length; i++)
+        arr[i].remove();
+}
+var msg = document.querySelectorAll('#AppWrapper > div.MessageBox.Info');
+if (msg.length) {
+    for (var j = 0; j<msg.length; j++)
+        if (msg[j].innerHTML.match(/AdminLIGEROBusiness/))
+            msg[j].remove();
+}
 //]]></script>
 
 
