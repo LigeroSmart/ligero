@@ -1,5 +1,3 @@
-# 01 - Apresentação - Ligero
-
 ## Apresentação
 
 O Ligero é uma ferramenta de gestão de Help Desk. Baseada na plataforma líder de mercado o OTRS (Open Technology Real Services) e integrado a ferramentas de manupilação de Big Data. Seu código é aberto , estável e altamente flexível. Realizada pela Complemento, na qual, conta com o apoio de profissionais qualificados e certificados.
@@ -12,9 +10,9 @@ O Ligero é uma aplicação Web desenvolvida em linguagem Perl, altamente escal�
 O Ligero é composto por vários módulos. O principal é o Framework, que contém funções basicas do sistema, como gerenciamento de usuários por exemplo. Depois de instalado, é possível adicionar módulos adicionais para expandir as funcionalidades do Ligero, adicionando por exemplo o Ligero ITSM, ou módulo de gerenciamento de conhecimento (FAQ) ou uma integração com sistemas de monitoramento.
 
 
-###Funcionalidades básicas do sistema.
+## Funcionalidades básicas do sistema.
 
-#### *Interface Web*
+### *Interface Web*
 
 * Interface Web para que o atendente possa visualizar e trabalhar os tickets dos clientes;    
 * Interface Web para administrar o sistema;    
@@ -24,14 +22,14 @@ O Ligero é composto por vários módulos. O principal é o Framework, que cont�
 * Você pode costumizar os templates de cada parte do sistema de forma independente (dtl);    
 * É possível anexar arquivos nos tickets;  
 
-#### *Interface de E-mail*
+### *Interface de E-mail*
 
 * Suporta Anexos;  
 * Encaminhando dos e-mails entrantes por caixas de correiosespecíficas, ou através de filtrage de palavras do e-mail;  
 * Respostas automáticas personalizadas para os clientes por fila;  
 * O sistema notifica os agentes por e-mail sempre que há um novo ticket, follow ups ou quando um chamado está no seu limite de tempo para ser resolvido (SLA);  
 
-#### *Ticket*
+### *Ticket*
 
 * Visão personalizada de filas ou visão de todos os tickets;  
 * Bloqueio de Tickets;   
@@ -48,11 +46,11 @@ Camada de eventos para s Tickets;
 * Pesquisa FullText;  
 * Suporte ACL nos Tickets; 
 
-#### *Interface responsiva (ceular)*
+### *Interface responsiva (ceular)*
 
 O Ligero possui interface responsiva, que se adapta a tela de dispositivos móveis como tablets e celulares de maneira a facilitar a leitura do contúdo.
 
-#### *Sistema*
+### *Sistema*
 
 * Definição de caendários e horários de atendimento para cálculos de tempo e SLAs;  
 * A base de dados de clientes pode vir de um Banco de Dados SQL ou de uma fonte LDAP (ex. eDirectory, AD, OpenLDAP);  
