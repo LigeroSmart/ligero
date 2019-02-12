@@ -36,7 +36,7 @@ __Chamados Abertos:__ Chamados em andamento, ou seja, que já tiveram algum tipo
 
 __Chamados com Lembrete:__ Nesta caixa aparecerá os chamados que atigirem a "data de pendência" especificada.
 
-
+![Screenshot](img/imgchamadoslembrete.png)
 
 __Chamados Escalados:__ Chamados que já tiveram seu prazo de solução, atualização ou resposta excedidas.
 
@@ -73,9 +73,13 @@ __Online:__ Exibe atendentes e clientes que se encontram logados no sistema
 
 Neste menu o atendente tem acesso à diferentes visualizações dos chamados bem como criar novos chamados. Os principais submenus estão descritos abaixo.
 
+![Screenshot](img/imgchamados.png)
+
 ## Visão de Filas 
 
 Aqui o atendente tem a visualização de todas as filas para as quais ele presta atendimento ou onde possui permissão de visualizaçào para consulta.
+
+![Screeshot](img/imgfilas.png)
 
 __Informações importantes:__
 
@@ -87,6 +91,8 @@ __Informações importantes:__
 * Na visualização S (Small), podemos ordenar oschamados de diferentes maneiras, clicando no nome de uma das colunas disponíveis. Clicando novamente na mesma coluna, invertemos sua ordem de ascedente para descendente.
   
 ## Visão de Serviços 
+
+![Screenshot](img/imgvisaoservicos.png)
 
 Nesta tela o atndente tem a visão dos serviços de sua preferência e dos chamados existentes nesses serviços. Possíveis ser configuradas na tela "Alterar Suas Preferências - Meus Serviços". veremos no próximos passos esse ajuste. 
 
@@ -103,6 +109,8 @@ Nesta área o atendente visualiza os chamados que ultrapassaram o tempo limite a
 ### Novo Chamado via Fone
 
 Quando um atendente recebe a ligção de um cliente, ele deve registrar este atendimento inserindo todos os dados do cliente necessários para dar continuidad ao atendimento da solicitação um Novo Chamado por elefone.
+
+![Screenshot](img/imgticket1.png)
 
 Abaixo temos a tela "Novo Chamado Via Fone" em sua configuração padrão. Comentaremos cada um dos pontos da mesma:
 
