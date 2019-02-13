@@ -1,6 +1,6 @@
 ## Apresentação
 
-O Ligero é uma ferramenta de gestão de Help Desk. Baseada na plataforma líder de mercado o OTRS (Open Technology Real Services) e integrado a ferramentas de manupilação de Big Data. Seu código é aberto , estável e altamente flexível. Realizada pela Complemento, na qual, conta com o apoio de profissionais qualificados e certificados.
+O Ligero é uma ferramenta de gestão de Help Desk. Baseada na plataforma líder de mercado o ((OTRS)) Community Edition (Open Technology Real Services) e integrado a ferramentas de manupilação de Big Data. Seu código é aberto , estável e altamente flexível. Realizada pela Complemento, na qual, conta com o apoio de profissionais qualificados e certificados.
 Finalmente, trata-se de uma ferramenta de código aberto e sem custo por licença de uso.
 Ao optar pelo Ligero como sistema de gestão de chamados automaticamente a organização tem em mãos uma ferramenta que proporciona respostas automáticas e imediatas para situações repetitivas, auxiliando os atendentes a encontrae causa raiz de problemas diversos. Permitirá, ao longo do tempo, adotar outras boas  e melhores práticas do ITIL e desfrutar de todos os benefícios que este framework oferece.
 
