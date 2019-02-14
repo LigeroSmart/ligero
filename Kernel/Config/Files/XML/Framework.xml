@@ -8304,6 +8304,30 @@ via the Preferences button after logging in.
             </Hash>
         </Value>
     </Setting>
+    <Setting Name="Loader::Agent::Skin###004-Ligero" Required="0" Valid="1">
+        <Description Translatable="1">Ligero 2019- Design by Complemento.</Description>
+        <Navigation>Frontend::Base::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="InternalName">ligero2019</Item>
+                <Item Key="VisibleName">Ligero</Item>
+                <Item Key="Description">Ligero - Design by Complemento.</Item>
+                <Item Key="HomePage">www.complemento.net.br</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Loader::Customer::Skin###004-Ligero" Required="0" Valid="1">
+        <Description Translatable="1">Ligero 2019- Design by Complemento.</Description>
+        <Navigation>Frontend::Base::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="InternalName">ligero2019</Item>
+                <Item Key="VisibleName">Ligero</Item>
+                <Item Key="Description">Ligero - Design by Complemento.</Item>
+                <Item Key="HomePage">www.complemento.net.br</Item>
+            </Hash>
+        </Value>
+    </Setting>
     <Setting Name="Loader::Agent::DefaultSelectedSkin" Required="1" Valid="1">
         <Description Translatable="1">The agent skin's InternalName which should be used in the agent interface. Please check the available skins in Frontend::Agent::Skins.</Description>
         <Navigation>Frontend::Base::Loader</Navigation>
