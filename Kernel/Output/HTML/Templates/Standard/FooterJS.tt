@@ -78,6 +78,12 @@ if (msg.length) {
         if (msg[j].innerHTML.match(/AdminLIGEROBusiness/))
             msg[j].remove();
 }
+var news = document.getElementById('Dashboard0000-ProductNotify-box');
+if (news)
+    news.remove();
+var onews = document.getElementById('Settings0000-ProductNotify');
+if (onews)
+    onews.parentElement.parentElement.parentElement.remove();
 //]]></script>
 
 
