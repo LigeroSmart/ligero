@@ -12,7 +12,7 @@ O ligero Smart possui um sistema de autenticação de usuários beseada em grupo
 
 Primeiramente, temos que entender a diferença entre grupos e papéis.
 
-__Grupos__, dentro do ligero Smart, são entidades associadas a filas e funcionalidades em geral. Por exemplo, se um atendente quer ter permissão de criar um chamado na fila "Central de Serviços", ele deverá possuir permissão RW ou Create no grupo associado a esta fila, que pode ser chamar, por exemplo, "g_central_serviços".
+__Grupos__, dentro do Ligero Smart, são entidades associadas a filas e funcionalidades em geral. Por exemplo, se um atendente quer ter permissão de criar um chamado na fila "Central de Serviços", ele deverá possuir permissão RW ou Create no grupo associado a esta fila, que pode ser chamar, por exemplo, "g_central_serviços".
 
 Se um atendente quer ter permissão para criar um relatório, ele deve ter permissão RW no grupo "stats" (grupo padrão do Ligero Smart para relatórios).
 
