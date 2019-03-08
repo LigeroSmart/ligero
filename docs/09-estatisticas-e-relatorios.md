@@ -64,17 +64,17 @@ __Dynamic-Object:__ Quando uma isntalação do Ligero Smart é feita, por padrã
 3. Tempo de Contabilizado do Chamado: Este relatório traz a quantidade de tempo que foram preenchidas no chamado. Esta informação é retirada do campo Unidade de Tempo (em minutos) na tela de resposta ou da Nota. Podemos fazer um filtro com horas contabilizadas de cada atendente, filtrar por cliente e serviço ou outra configuração mais adequada para seu tipo de negócio.
 4. Ticket Solution Response Time: Este relatório tem a função de nos trazer informações como tempo médio de atendimento, tempo mínimo e máximo. Dependendo do filtro escolhido ele retorna o tempo médio, mínimo e máximo de atendimento de cada serviço por atendente ou uma relação de fila x serviço/atendente. Entraremos em mais detalhes na elaboração destes relatórios.
 
-Os campos definem permissões e como esse relatório sera exibido:
+Os próximos  campos definem permissões e como esse relatório será exibido:
 
 Permissões: Define quem terá direito no relatório. Quem poderá extrair ou editar o mesmo, contando com as configurações de permissões dos grupos.
 
 img
 
-Formato do Resultado: Nesse campo definimos como e com qual formato o relatório vai ser extraido. Existem algumas opções de gráficos e mais CSV e "Imprimir" que é extraido em PDF.
+Formato do Resultado: Nesse campo definimos como e com qual formato o relatório vai ser extraido. Existem algumas opções de gráficos e mais o CSV e "Imprimir" que é extraido em PDF.
 
 Tamanho do Gráfico: Define o tamanho para os gráfico extráidos. Tabalha em conjunto com o Formato do Resultado.
 
-Somar Linhas: No final do relatório, pode'-se somar linhas.
+Somar Linhas: No final do relatório, pode-se somar linhas.
 
 Somar Colunas: No final do relatório, pode-se somar as colunas.
 
@@ -86,45 +86,45 @@ Vamos simular um relatório de lista de chamado. Todos os dados presentes neste 
 Esta relatório será dos chamados abertos no sistema.
 Para dar início ao novo relatório, basta seguir *Estatísticas->Adicionar*.
 Selecione o tipo da matriz, estatística de lista dinâmica.
-Definir umtítulo e descrição para este novo relatório.
-No caso, vou chamar de "Chamados Abertos" e a descrição "Chamados Abertos no sistema".
-Em Dynamic_Object, selecionar *Lista de Chamado*.
-Clicar em *Salvar*.
+Defina um título e descrição para este novo relatório.
+No caso, vamos chamar de "Chamados Abertos" e a descrição "Chamados Abertos no sistema".
+Em Dynamic_Object, selecione *Lista de Chamado*.
+Clique em *Salvar*.
 
-No passo 2, deverá esco;her quais os campor aparecerão no relatório, selecionando o eixo -x, conforme imgem abaixo: 
-
-img
-
-Selecionamos os campos de Ticket, Idade, Titúlo, Criado, Alterado, Fila, Estado. Clique em *Salvar* para seguir a diante.
+No passo 2, você deverá escolher escolher quais os campos aparecerão no relatório, selecionando o eixo - x, conforme imagem abaixo: 
 
 img
 
-Deverá escolher quais campos serão ordenados e a sequência, selecionando o eixo -y, conforme imagem abaixo:
+Selecione os campos de Ticket, Idade, Titúlo, Criado, Alterado, Fila, Estado. Clique em *Salvar* para seguir a diante.
 
 img
 
-Em seguida, escolher como você gostaria de ordenar os chamados, ou seja, escolher se é crescente ou decrescente, por qual atributo vais ser ordenado. Nor,almete ordenamos pelo Ticket#.
+Escolha quais campos serão ordenados e a sequência, selecionando o eixo - y, conforme imagem abaixo:
 
 img
 
-ele retornou todos os chamados abertos no sistema.
+Em seguida, escolha como você gostaria de ordenar os chamados, ou seja, escolha se é crescente ou decrescente, por qual atributo vai ser ordenado. Normalmente ordenamos pelo Ticket#.
+
+img
+
+Vcê verá que  retorá todos os chamados abertos no sistema.
 
 ### Acumulação de Chamados
 
-Para criar um relatório de Acumulação de Chamados, iniciar o procedimento, conforme o anterior usando estatística de atriz dinâmica.
+Para criar um relatório de Acumulação de Chamados, inicie o procedimento, conforme o anterior usando estatística de matriz dinâmica.
 
-Inserir nome e descrição, no Dynamic-Object escolher Acumulação de chamados. Nessa simulação, vamos exportar quantos chamados cada atendente possui, ou seja, quantos chamados cada atendente possui bloqueados.
+Insera o nome e a descrição, no Dynamic-Object escolha Acumulação de chamados. Nessa simulação, exporte quantos chamados cada atendente possui, ou seja, quantos chamados cada atendente possui bloqueados.
 
-Antes de fazer esse relatório, abrir uma nova guia no navegador e navegar até *Administração -> Configuração do Sistema*. No listbox escolher Framework. Localizar a opção de configuração Frontend::Agent::Stats. Localizar o Argumento Stats::UsegentelementStats. Alterar essa configuração para "SIM". Em seguida, clique em *Atualizar*.
+Antes de fazer esse relatório, abra uma nova guia no navegador e navegue até *Administração -> Configuração do Sistema*. No listbox escolha Framework. Localize a opção de configuração Frontend::Agent::Stats. Localize o Argumento Stats::UsegentelementStats. Altere essa configuração para "SIM". Em seguida, clique em *Atualizar*.
 
 Essa opção vai habilitar a opção de escolher proprietário do chamado nos relatórios.
 
-O campo __Exibir como componente no painel de controle:__ colocar como SIM. Com ela, será possível exibir essa pesquisa em forma de Gráfico no Painel de COntrole.
+O campo __Exibir como componente no painel de controle:__ coloque como SIM. Com ela, será possível exibir essa pesquisa em forma de Gráfico no Painel de Controle.
 Após essa modificação, volta para a tela de criação do relatório.
 Clique no eixo - X
 Adicione o atributo estado, em seguida o estado desejado.
 
-Selecionando o Atendente/Proprietário para exibir o relatório, clicar no eixo - y, adicione o atributo Atedente/Proprietário, em seguida o Atendente desejado. 
+Selecionando o Atendente/Proprietário para exibir o relatório, clique no eixo - y, adicione o atributo Atedente/Proprietário, em seguida o Atendente desejado. 
 Na etapa 3, selecione o campo *Estado* e selecione todos os itens.
 
 img
@@ -141,8 +141,8 @@ O retorno deste relatório fica da seguinte maneira:
 
 img
 
-Excluir a coluna com Admin Ligero para falicitar a visualização.
-Para habilitar este relatório como gráfico no Painel de Controle, clique em *Painel de Controle*. Expandir o menu Configurações no canto direito da tela e selecionar o gráfico criado, conforme imagem abaixo.
+Exclua a coluna com Admin Ligero para falicitar a visualização.
+Para habilitar este relatório como gráfico no Painel de Controle, clique em *Painel de Controle*. Expanda o menu Configurações no canto direito da tela e selecione o gráfico criado, conforme imagem abaixo.
 
 Após selecionado, o Ligero Smart, tem o tempo de geração desse gráfico de 10 minutos para carregar as informações.
 Ao carregar, o gráfico é exibido desta forma:
@@ -151,10 +151,10 @@ img
 
 ### Tempo Contabilizado de Chamado
 
-Nesse exemplo, vamos calcular o total de tempo trabalhado por uma determinada equip, no caso, as equipes são divídidas emfilas. Suporte::Hardware, Suporte::Software, Suporte::Sistemas.
+Nesse exemplo, vamos calcular o total de tempo trabalhado por uma determinada equipe, no caso, as equipes são divídidas em filas. Suporte::Hardware, Suporte::Software, Suporte::Sistemas.
 
 Na teala de criação da Esatísticas, em Dynamic-Object, selecione o Tempo Contabilizadode Chamado/ TicketAccountdTime.
-Clique em salvar, selecione o eixo - x, adicione o atributo Fila, em seguida as filas desejadas conforme imagem abaixo:
+Clique em salvar, selecione o eixo - x, adicione o atributo fila, em seguida as filas desejadas conforme imagem abaixo:
 
 img
 
@@ -164,24 +164,24 @@ img
 
 Vamos restringir o gráfico para a hora de criação.
 
-Selecione a opção filtro, adicione o atributo Horário de Criação do Chaamado, em seguida coloque a data conforme imagem abaixo:
+Selecione a opção filtro, adicione o atributo Horário de Criação do Chamado, em seguida coloque a data conforme imagem abaixo:
 
 img
 
 Clique em *Salvar* e em seguida *Salvar e Finalizar*.
 
 Finalize o relatório e extraia o mesmo.
-O retorno deste relatório ficou da seguinte maneira:
+O retorno deste relatório ficará da seguinte maneira:
 
 img
 
-Podemos ver quais foram as ocupações de cada analista no decorrer  do dia.
+Podemos ver quais foram as ocupações de cada análista no decorrer  do dia.
 
 ### Ticket Solution Response Time
 
-O último reatório pardrão do Ligero Smart apreseta algumas funções interessantes. Vamos criar um teste para entendermos melhor o que faz.
-Crie um relatório Lista Dinânmica com um nome e descrição e escolher o Dynamic-Object TicketSolutionResponseTime e clique em *Salvar*.
-Selecione o eixo - x, adicione o atributo Avaliado por, em seguida os valores conforme imagem abaixo:
+O último reatório padrão do Ligero Smart apresenta algumas funções interessantes. Vamos criar um teste para entendermos melhor o que faz.
+Crie um relatório Lista Dinâmica com um nome e descrição e escolha o Dynamic-Object TicketSolutionResponseTime e clique em *Salvar*.
+Selecione o eixo - x, adicione o atributo Avaliado, em seguida os valores conforme imagem abaixo:
 
 img
 
@@ -191,9 +191,9 @@ img
 
 Na etapa 4, de resttrições, vamos executar sem nenhuma,porém, podemos restringir por data de criação ou fechamento entre outras opções.
 
-Finalize o relatório e extraia. O relatório extraido fica da seguinta maneira:
+Finalize o relatório e extraia. Ficará da seguinta maneira:
 
-Esse relatório nos mostra o tempo médio, máximo e mínimo que cada analista trabalhou emcada fila. Realizando restrições, esse relatório consegue trazer informçõe mais robustas ou mais simples.
+Esse relatório nos mostra o tempo médio, máximo e mínimo que cada analista trabalhou em cada fila. Realizando restrições, esse relatório consegue trazer informçõe mais robustas ou mais simples.
 
 Solution Averege é o tempo médio que o analista levou para atender os chamados de cada fila.
 

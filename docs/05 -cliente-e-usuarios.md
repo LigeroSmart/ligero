@@ -95,7 +95,7 @@ Agora, é necessário customizar o backend de usuário padrão do Ligero Smart. 
     CacheTTL => 60 * 60 * 24,
     Map => [``
 
-        ```User`,   `Title` `title` 1,0``var`, 0],
+        `User`,   `Title` `title` 1,0``var`, 0],
         [`UserFirstname`,  `Firstname`, `first_name`, 1, 1,`var`,",0],
         [`UserLastname`, `Lastname`, `last_name`, 1, 1,`var`,",0],
         [`UserLogin`, `Username`,`login`,   1, 1,`var`,",0]

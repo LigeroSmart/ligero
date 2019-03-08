@@ -12,7 +12,7 @@ O módulo de FAQ é uma extensão do Ligero Smart, para formar uma base de conhe
 
 Para realizar a instalação da FAQ no Ligero Smart, vamos seguir o mesmo modelo do manual 08 - Gerenciamento de Pacotes 
 
-Realizar o Download do módulo da FAQ pelo link abaixo: 
+Realize o Download do módulo da FAQ pelo link abaixo: 
 
 link???
 

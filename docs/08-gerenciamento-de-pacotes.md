@@ -24,7 +24,7 @@ Os pacotes podem ser instalados através da interface em *Administração -> Ger
 
 img
 
-Basta selecionar o pacote que deseja instalar a partir de seu PC e clicar em "Ïnstalar Pacotes", ou selecionando um a partir da lista fornecida pelo repositório ocficial e clicando em "instalar".
+Basta selecionar o pacote que deseja instalar a partir de seu PC e clicar em "Instalar Pacotes", ou selecionando um a partir da lista fornecida pelo repositório ocficial e clicando em "instalar".
 
 img
 

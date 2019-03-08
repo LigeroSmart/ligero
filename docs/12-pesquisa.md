@@ -6,7 +6,7 @@ Licencimanto deste Manual/Documento
 
 ## Apresentção
 
-O módulo de pesquisa do Ligero Smart éuma funcionalidade para criar pesquisas que os clientes dos chamados fechados são convidados a preencher.
+O módulo de pesquisa do Ligero Smart é uma funcionalidade para criar pesquisas que os clientes dos chamados fechados são convidados a preencher.
 
 ## Instalação
 
@@ -61,6 +61,29 @@ Insira a resposta, conforme imagem abaixo:
 
 img
 
-Lembranco que os tipos Radio e Checkbox, é necessário uas resposta no mínimo.
-Configurado as perguntas, clique em *Voltar* e depois 
+Lembrando que os tipos Radio e Checkbox, é necessário uas resposta no mínimo.
+Configurado as perguntas, clique em *Voltar* e depois Fechar Janela.
+
+Novamente na página de pesquisa, para dar início ao envio da pesquisa no fechamento do chamado, altere o Status para "Master", conforme imgem abaixo:
+
+img
+
+Apenas um questionário pode ser colocado como Mestre. Os próximos serão colocados como Válido.
+Assim que o chamado é fechado, o cliente recebe o convite para preencher  o Formulário clicando no link dentro do convite do Ligero Smart.
+
+### Visualizar os resultados da Pesquisa
+
+Para visualizar os resultados da Pesquisa, seguir o caminho *Pesquisa -> Overview -> Escolher a Pesquisa*.Ao final da página, você pode verificar um gráfico com o percentual das respostas, no caso de YesNo, CheckBox e Radio.
+No caso de perguntas que foram selecionadas como Não Necessárias, irá aparecera quantidade de pessoas que preencheram essa resposta.
+Nos detalhes da estatísticas:
+
+img
+
+Você pode analisar cada pesquisa respondida. Quando clicando em Detelhes de Estatísticas, abrirá a seguinte tela:
+
+img
+
+Quando clicado na Lupa, conseguimos verificar a resposta de cada pergunta. No caso acima, temos apenas um chamado, caso tenha mais chamados, essa lista aumentará.
+
+
 
