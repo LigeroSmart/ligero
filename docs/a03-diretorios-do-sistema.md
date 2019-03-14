@@ -69,11 +69,11 @@ Pasta dedicada a armazenar configurações do sistema.
 
 img
 
-*Kernel/Config/Defaults.pm*
+*Kernel/Config/Defaults.pm*  
 Contém o "esqueleto" de configurações possíveis do sistema principal. Nunca deve ser alterado.
 
 ### *Kernel/Config/Files*
-Contém arquivos adicionais de configuração do sistema. Os arquivs .xml que estão dentro da pasta, definem novos parâmetros que estarão disponíveis para acesso através do menu ""Configuração de Sistema" dentro da pasta Admin. Se uma configuração é alterada através deste menu, esta alteração __não é__ registrada nos arquivos __.xml__, mas sim no arquivo __ZZZAuto.pm__, também disponvel na mesma pasta.
+Contém arquivos adicionais de configuração do sistema. Os arquivs .xml que estão dentro da pasta, definem novos parâmetros que estarão disponíveis para acesso através do menu "Configuração de Sistema" dentro da pasta Admin. Se uma configuração é alterada através deste menu, esta alteração __não é__ registrada nos arquivos __.xml__, mas sim no arquivo __ZZZAuto.pm__, também disponvel na mesma pasta.
 
 img
 

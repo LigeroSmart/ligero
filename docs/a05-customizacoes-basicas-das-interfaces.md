@@ -1,10 +1,11 @@
 ## Customizações Básicas das Interfaces 
 
-## Alteração de Logotipos da interface do Cliente
+### Alteração de Logotipos da interface do Cliente
 
 O logotipo padrão do Ligero Smart é assim:
 
 img
+
 
 Obtenha uma imagem no formato de 135x50 pixels e coloque-a dentro da pasta skins do Ligero Smart ou em algum lugar acessível na internet.
 
@@ -22,8 +23,6 @@ Altere o sub parâmetro URL acima, colocando o link para a imagem de seu logotip
 
 Acesse Admin -> Configurações do Sistema -> Framework -> Frontend::Agent
 
-img
-
 Altere o sub parâmetro URL do parâmetro AgentLogo.
 
 ## Criando seu prórpio tema
@@ -32,7 +31,7 @@ O Ligero Smart permite customizar o template HTML de suas telas detal forma a mo
 
 Primeiramente, a recomendação é a criação de uma pasta específica de "tema" para sua organização, conforme oartigo abaixo:
 
-https://ligero.github.io/doc/manual/admin/stable/en/html/themes.html
+[https://ligero.github.io/doc/manual/admin/stable/en/html/themes.html](link)
 
 Resumindo, deve-se criar uma pasta chamada   
 Kernel/Output/HTML/Templates/SuaEmpresa e copiar todos os arquivos que se deseja customizar da pasta Kernel/Output/HTML/Templates/Standard para a nova pasta.
@@ -63,16 +62,16 @@ Copie os arquivos AgentTicketPhone.tt, AgentTicketEmail.tt e AgentTicketActionCo
 
 Em todos os arquivos, encontre e __recorte__ o seguinte bloco selecionado abaixo:
 
-img
+![Screenshot](img/a05/imgitsmatual.png)
 
 Insira o bloco recortado conforme a figura abaixo, entre códigos:
 
-[% RenderBlockEnd("TicketServiceMandatory")%]  
-[% RenderBlockSart("TicketSLA")%]  
+<!-- dtl:block:ServiceMandatory -->
+<!-- dtl:block:SLA --> 
 
 Veja:
 
-img
+![Screenshot](img/a05/imgitsmatualcont.png)
 
 Após atualizarmos os arquivos e selecionarmos nosso tema de preferência, o Impacto é exibido entre os campos serviço e SLA como abaixo:
 

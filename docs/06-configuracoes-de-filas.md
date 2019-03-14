@@ -11,9 +11,9 @@ __Tempo de Expiração De Desbloqueio minutos:__ Tempo em minutos (dentro do hor
 
 #### Prazo de Escalação
 
-É possível determinar um prazo de escalação para os chamados de acordo com a fila em que se encontram, ou seja, se o chamado estiver naquela fila, tera determinado tempo para solução ou primeira resposta, contando sempre dohorário de criação do chamdo, e não do horário em que foi enviado para aquela fila.
-No entento, se um SLA foratribuído ao chamado, o tempo de escalação definido na fila deixa de valer para este chamado.
-Vejamos a seguir, os tipos de escalação que podem ser configurados nas filas:
+É possível determinar um prazo de escalação para os chamados de acordo com a fila em que se encontram, ou seja, se o chamado estiver naquela fila, tera determinado tempo para solução ou primeira resposta, contando sempre dohorário de criação do chamdo, e não do horário em que foi enviado para aquela fila.  
+No entento, se um SLA foratribuído ao chamado, o tempo de escalação definido na fila deixa de valer para este chamado.  
+Vejamos a seguir, os tipos de escalação que podem ser configurados nas filas:  
 
 __Escalação - prazo da resposta inicial (minutos):__ Define o tempo máximo em minutos para que o atendente faça um primeiro contato por e-mail ou telefone com o cliente. Se não cumprido, o chamado será escalado.
 
@@ -25,7 +25,7 @@ __Opção de Revisão:__
 
 Define o comportamento do sistema quando recebemos um e-mail referente a um chamado já encerrado:
 
-1. Possível - o sistema reabre o chamado.
+> 1. Possível - o sistema reabre o chamado.
 2. New Ticket - o sistema cria um novo chamdo com o e-mail que chegou após o encerramento do chamdo anterior.
 3. Reject -  O sistema mantém o chamdo fechado e adiciona o texto do e-mail no mesmo chamado.
 
@@ -53,7 +53,7 @@ As auto respostas são mensagens enviadas aos clientes em determinadas ocasiões
 
 Ao cadastrar uma Auto Resposta, você deverá informar o tipo da mesma. Suas opções são:
 
-1. Autorresposta: Resposta que será enviada ao cliente, caso ele crie um chamado.
+> 1. Autorresposta: Resposta que será enviada ao cliente, caso ele crie um chamado.
 2. Autorresposta/Novo Chamado: Caso a fila esteja configurada para criar um novo chamado quando o chamado anterior esteja fechado, e o cliente envia uma mensagem, esta auto resposta será enviada.
 3. Autorrejeitar: Caso a fila esteja configurada para rejeitar novas mensagens em chamados encerrados, esta mensagem será enviada.
 4. Autorrevisão: Enviado sempre que um cliente envia uma resposta a um chamado em andamento.
@@ -64,7 +64,7 @@ Após a criação das autorrespostas, é necessario atribuí-la às filas corres
 
 Um modelo é um texto padrão que ajuda os atendentes a redigir chamados, respostas ou encaminhamentos mais rapidamente. Por padrão, há 2 tipos: 
 
-1. Respostas em branco
+> 1. Respostas em branco
 2. Resposta de teste
 
 Ao criar um modelo, você deve definir o tipo do mesmo. O tipo determina onde estes modelos serão disponibilizados:

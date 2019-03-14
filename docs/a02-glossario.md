@@ -1,5 +1,3 @@
-## Glassário
-
 ## Glossário Help Desk
 
 ### Chamados ou Tickets

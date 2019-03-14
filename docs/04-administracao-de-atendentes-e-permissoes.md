@@ -28,7 +28,7 @@ Uma vez desativada esta opção, o menu *Atendentes <-> Grupo* não fica mais di
 
 Exemplos de Papéis que podemos criar:
 
-1. Atendente do Nível 1
+> 1. Atendente do Nível 1
 2. Gestor
 3. Administrador do Ligero Smart
    
@@ -80,14 +80,14 @@ Reparem que abos os casos, selecionamos o grupo users. O grupo users é um grupo
 
 __*Criação de Grupos e Papeis pela Linha de Comando*__
 
-Uma maneira de facilitar a gestão do sistema e criar dados em massa, é utilizando o Ligero.console.pl
+Uma maneira de facilitar a gestão do sistema e criar dados em massa, é utilizando o Ligero.console.pl  
 Este utilitário permite realizar gestão e manutenção de grupos, papeis, filas e outros recursos do sistema. 
 
-__Criação de Grupos__
-Para criar grupos a partir da linha de comando, utilize o código abaixo, substituindo grp_service_desk pelo nome do grupo que se deseja criar:
+__Criação de Grupos__  
+Para criar grupos a partir da linha de comando, utilize o código abaixo, substituindo grp_service_desk pelo nome do grupo que se deseja criar:  
 /opt/ligero/bin/ligero.Console.pl Admin::Group::Add --name"grp_service_desk" -allow-root
 
-__Criação de Papeis__
-Para criar grupos a partir da linha de comando, utiliza o código abaixo, substituindo grp_service_desk pelo nome do grupo que deseja criar:
+__Criação de Papeis__  
+Para criar grupos a partir da linha de comando, utiliza o código abaixo, substituindo grp_service_desk pelo nome do grupo que deseja criar:  
 /opt/ligero/bin/ligero.Console.pl Admin::Role::Add --nameÄnalista de Service Desk"--allow-root
 

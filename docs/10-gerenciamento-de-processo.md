@@ -7,9 +7,8 @@ ____
 
 ### Visão Geral do Gerencimento de Processos 
 
-O ligero Smart possui um construtor visual de processos que permite a elaboração de fluxos de tabalho (work flows) utilizando seu macanismo de chamados.
-
-A ideia básica é modelar procedimentos recorrentes, delegando tarefas e direcionando o fluxo de atendimento de acordo com certos critérios com estado, prioridade, valores em campos dinâmicos ect. 
+O ligero Smart possui um construtor visual de processos que permite a elaboração de fluxos de tabalho (work flows) utilizando seu macanismo de chamados.  
+A ideia básica é modelar procedimentos recorrentes, delegando tarefas e direcionando o fluxo de atendimento de acordo com certos critérios com estado, prioridade, valores em campos dinâmicos ect.  
 
 __Dica importante:__ Para desenhar processo no Ligero Smart, __utiliza o navegador Chrome de preferência__. Já tivemos problemas graves com outros navegadores.
 
@@ -21,8 +20,8 @@ Basicamente, teremos o seguinte fluxo:
 
 1. Alguém solicita o reembolso preenchendo informações como valor de alimentação, taxi, etc. 
 2. Esta solicitação cai para a aprovação de um gestor.
-3. Aprovação ?
-    1. Se reprovado, o chamdo é encerrado
+3. Aprovação 
+    1. Se reprovado, o chamado é encerrado
     2. Se aprovado, o chamado é encaminhado para a fila de tesouraria para Pagament
 4. Após o pagamento, o chamado é fechado e um novo chamado é criado para área de contabilidade fazer o lançamento no sistema contábil.
 
@@ -30,15 +29,15 @@ Basicamente, teremos o seguinte fluxo:
 
 Normalmente o desenho de work flows faz sentido a medida que automatizamos a obtenção e processamento de informcões. Work flows para "Processos de Reembolso",  "Requisição de Compras" etc normalmente requerem o registro de informções que não existem por padrão no mecanismo de ticket do Ligero Smart, tais como "Valor de Táxi", "Valor Alimentação" etc. por isso, o ponto de partida que recomendamos para a paremetrização de processos é a definição e acriação de campos dinâmicos para o mesmo.
 
-Neste exemplo, utilizaremos os seguintes campos dinâmicos:
-  * Quilometragem rodada (reeQuilometragem), no objeto chamado, tipo texto.
-  * Se preferir, adicione uma expressão regular nas configurações do campo, para aceitar apenas números no campo.
-* Valor Pedágio (reePedagio), no objeto chamado, tipo texto.
-* Valor Táxi (reeTaxi), no objeto chamado, tipo texto.
-* Valor Avião/Onibus (reeAviao),no objeto chamado, tipo texto.
-* Valor Alimentação (reeAlimentação), no objeto chamado, tipo texto.
-* Valor Hospedagem (reeHospedagem), no objeto chamado, tipo texto.
-* Status Reembolso (reeStatus), no objeto chamado, tipo Dropdown, valores "Aprovação Pendente", "Aprovado" e "Rejeitado".
+Neste exemplo, utilizaremos os seguintes campos dinâmicos:  
+> * Quilometragem rodada (reeQuilometragem), no objeto chamado, tipo texto.  
+>> * Se preferir, adicione uma expressão regular nas configurações do campo, para aceitar apenas números no campo.  
+* Valor Pedágio (reePedagio), no objeto chamado, tipo texto.  
+* Valor Táxi (reeTaxi), no objeto chamado, tipo texto.  
+* Valor Avião/Onibus (reeAviao),no objeto chamado, tipo texto.  
+* Valor Alimentação (reeAlimentação), no objeto chamado, tipo texto.  
+* Valor Hospedagem (reeHospedagem), no objeto chamado, tipo texto.  
+* Status Reembolso (reeStatus), no objeto chamado, tipo Dropdown, valores "Aprovação Pendente", "Aprovado" e "Rejeitado".  
 
 __Importante:__ Faça a liberação destes campos dinâmicos na tela "Frontend::Customer::Ticket::ViewZoom"
 
@@ -79,8 +78,8 @@ Crie 4 atividades descritas acima, clicando em *"Atividades"-> "Criar Nova ativi
 Por enquanto, apenas dê o nome à atividade e clique em "Enviar".
 
 
-*Apenas para informção*
-* Cada elemento possui um código de identificação (exemplo: *Activity-736cb0a14b6a1ac160067af4bec5b57e*) que é conhecido como EntityID.
+*Apenas para informção*  
+> * Cada elemento possui um código de identificação (exemplo: *Activity-736cb0a14b6a1ac160067af4bec5b57e*) que é conhecido como EntityID.
 * As atividades ão conectadas pelas transições. Veremos adiante como criaá-las e utilizá-las para interligar as atividades.
 
 Arraste as 4 Atividades criadas para o painel posionando de forma semelhante a disposição dos elementos na imagem abaixo:
@@ -134,24 +133,24 @@ Em "Submit Button Text" você pode alterar o texto padrão ("Enviar") do botão 
 
 Agora precisamos colocar os campos que serão exibidos ou trabalhados nesta tela.
 
-Esta será a tela inicial do processo, visto que colocaremos  ela como primeira janela de atividade, primeira atividade do mesmo, por isso, será necessário também alguns campos além dos campos do preciso que definimos acima, conforme veremos a seguir. Arraste os seguintes campos da caixa "Campos Dsiponíveis" para a caixa "Campos Atribuídos", ao arrastar, o sistema solicitará algumas informações que também explicaremos a seguir:
-* Arraste o campo campo ID do Cliente
-    * A tela "Editar Detalhes do  Campo Customer ID" é exibida. Mantenha os valores padrão e clique em *Salvar*.
-    * Obs: Este campo só é exibido na interface de atendente.
-* Arranste o campo Artigo.
-    * Atere o "Tipo de Artigo" para "chamado web".
-    * Altere a propriedade "Exibir" para "Show Field As Mandatory" e clique em *Salvar*.
-* Arraste o campo "Fila"
-    * Altere o valor padrão para "Tesouraria"
-    * Altere a exibiçào para "Do not show field"
-* Arraste os campos a seguir e mantenha os detalhes padrões
-    * Quilometragem rodada
-    * Valor Pedágio
-    * Valor Táxi
-    * Valor Avião/Onibus
-    * Valor Alimentação
-    * Valor Hospedagem 
-Finalmente clique em *Enviar*.
+Esta será a tela inicial do processo, visto que colocaremos  ela como primeira janela de atividade, primeira atividade do mesmo, por isso, será necessário também alguns campos além dos campos do preciso que definimos acima, conforme veremos a seguir. Arraste os seguintes campos da caixa "Campos Dsiponíveis" para a caixa "Campos Atribuídos", ao arrastar, o sistema solicitará algumas informações que também explicaremos a seguir:  
+> * Arraste o campo campo ID do Cliente  
+    * A tela "Editar Detalhes do  Campo Customer ID" é exibida. Mantenha os valores padrão e clique em *Salvar*.  
+    * Obs: Este campo só é exibido na interface de atendente.  
+* Arranste o campo Artigo.  
+    * Atere o "Tipo de Artigo" para "chamado web".  
+    * Altere a propriedade "Exibir" para "Show Field As Mandatory" e clique em *Salvar*.  
+* Arraste o campo "Fila"  
+    * Altere o valor padrão para "Tesouraria"  
+    * Altere a exibiçào para "Do not show field"  
+* Arraste os campos a seguir e mantenha os detalhes padrões  
+    * Quilometragem rodada  
+    * Valor Pedágio  
+    * Valor Táxi  
+    * Valor Avião/Onibus  
+    * Valor Alimentação  
+    * Valor Hospedagem   
+Finalmente clique em *"Enviar"*.  
 
 Agora clique e arraste o "Formulário de Reembolso" para dentro da atividade "Preenchimento do Formulário de Reembolso".
 
@@ -211,10 +210,8 @@ Vamos cirar nossa primeira transição clicando em *Transições -> Criar Nova T
 
 img
 
-No campo "Nome da Transição" coloque "Aprovação Pendente".
-
-A seguir, precisamos definir as condições que gatilham esta transição.
-
+No campo "Nome da Transição" coloque "Aprovação Pendente".  
+A seguir, precisamos definir as condições que gatilham esta transição.  
 Faremos então um pequeno parênteses aqui para explicar como confgurar as condições.
 
 #### Condições
@@ -227,13 +224,13 @@ Podemos inserir uma condição apenas para nosso gatilhados ou várias condiçõ
 
 Possuímos dois níveis de condiçãoes, o que nos permite criar condições multiplas combinadas, por exemplo:
 
-Se ((Prioridade = Alta __e__ Tipo = Incidente) __ou__ (Prioridade = Muito Alta __e__ Tipo = Incidente)) ou a mesma regra configurada de outra maneira:
-Se ((Tipo = Incidente) __e__ (Prioridade = Muito Alta __ou__ Prioridade = Muito Alta))
+Se ((Prioridade = Alta __e__ Tipo = Incidente) __ou__ (Prioridade = Muito Alta __e__ Tipo = Incidente)) ou a mesma regra configurada de outra maneira:  
+Se ((Tipo = Incidente) __e__ (Prioridade = Muito Alta __ou__ Prioridade = Muito Alta))  
 
 Em seguida, temos que definir o nome do campo do chamado que será analisado.
 
-Podemos trabalhar com os seguintes valores (principais):
-* Title
+Podemos trabalhar com os seguintes valores (principais):  
+> * Title
 * State
 * StateID
 * Priority
@@ -260,8 +257,8 @@ Podemos trabalhar com os seguintes valores (principais):
 
 Temos mais um detalhe, o "Tipo" de verificação do campo, que pode ser:
 
-* String: Verifica se o valor do campo é exatamentte o digitado
-* Regexp: faz uma verificação utilizando expressão regular
+* String: Verifica se o valor do campo é exatamente o digitado;
+* Regexp: faz uma verificação utilizando expressão regular;
 * Transition Validation Module: trata-se de uma maneira mais avançada de gatilhar a transição, chamando um módulo perl externo, que pode realizar cáculos mais avançados ou mesmo consultar informações em outros sistemas externos para então gatilhar a transição entre atividades.
 
 Neste nosso exemplo, queremos criar a transição "Aprovação Pendente" que verifica o campo reeStatus (DynamicField_reeStatus). O preenchimento da tela ficaria desta forma:
@@ -274,7 +271,7 @@ Agora que criamos a transição vamos conectá-la às atividades. Clique e arras
 
 img
 
-Agora clique na bolinha vermelha na ponta da transição (a cor da linha deve mudar para amarelo) e arraste até a atividade "Análise e aprovação", até que a mesma fique com a borda amarela, e solte o botão do mouse. Deverá ficar assim:
+Agora clique na bolinha vermelha na ponta da transição (a cor da linha deve mudar para amarelo) e arraste até a atividade "Análise e Aprovação", até que a mesma fique com a borda amarela, e solte o botão do mouse. Deverá ficar assim:
 
 img
 
@@ -292,8 +289,8 @@ img
 
 Uma vez que conectamos todas as atividades utilizando as transições, podemos definir ações que são executadas no chamado quando uma transição entre atividades ocorrer.
 
-Em nosso exemplo, vamos realizar as seguintes ações quando cada transição abaixo ocorrer:
-* Aparovação Pendente
+Em nosso exemplo, vamos realizar as seguintes ações quando cada transição abaixo ocorrer:  
+> * Aparovação Pendente
   * Mover chamado para fila Gestores
 * Reembolso Rejeitado 
     * Mover chamados para a fila Tesouraria 
@@ -303,13 +300,10 @@ Em nosso exemplo, vamos realizar as seguintes ações quando cada transição ab
 * Chamado Encerrado
     * Criar um novo chamado para a fila Contabilidade, solicitando a conciliação cotábil
 
-Note que a ação "Mover chamado para fila Tesouraria" é comum a duas transições.
-__Vamos criar as ações.__ Clique em *Ações de Transição -> Criar Nova Açào de Transição*.
-
-Primeiramente defina o nome da ação. Vamos começar com a "Mover chamado para fila Gestores".
-
-As ações de transição utilizam módulos para executar suas atividades. Neste exemplo, vamos utilizar o módulo __TicketQueueSet__ que altera o chamado de fila (adiante explicaremos a função de outros módulos).
-
+Note que a ação "Mover chamado para fila Tesouraria" é comum a duas transições.  
+__Vamos criar as ações.__ Clique em *Ações de Transição -> Criar Nova Açào de Transição*.  
+Primeiramente defina o nome da ação. Vamos começar com a "Mover chamado para fila Gestores".  
+As ações de transição utilizam módulos para executar suas atividades. Neste exemplo, vamos utilizar o módulo __TicketQueueSet__ que altera o chamado de fila (adiante explicaremos a função de outros módulos).  
 Em Parâmetros de Configuração, no campo "Chave" digite "__Queue__" (sem aspa). Em "Valor" digite "Gestores" (sem aspas):
 
 img
@@ -517,7 +511,7 @@ Acesse o novo chamado e perceba que os valores preenchidos no chamado anterior f
 
 img
 
-### Anexo 1: Módulo de Transição
+### Anexo 1: Módulos de Transição
 
 Aqui temos a lista de módulos de transição e seus parâmetros
 
@@ -535,13 +529,13 @@ Cria um artigo no chamado
 
 | __Chave__                   | __Valores Possíveis__                                                                                          |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------|
-| __Obrigatório__             |                                                                                                                |
-| ArticleType                 | note-external|note-internal|phone|fax|sms...                                                                   |
-| SenderType                  | agent|system|customer                                                                                          |
+| __Obrigatórios__             |                                                                                                                |
+| ArticleType                 | note-external/note-internal/phone/fax/sms...                                                                   |
+| SenderType                  | agent/system/customer                                                                                          |
 | ContentType                 | text/plain; charset=ISO-8859-15                                                                                |
 | Subject                     | Assunto do Artigo                                                                                              |
 | Body                        | Corpo do Artigo                                                                                                |
-| HistoryType                 | OwnerUpdate|EmailCustomer|Move|AddNote|PriorityUpdate|WebRequestCustomer|...                                   |
+| HistoryType                 | OwnerUpdate/EmailCustomer/Move/AddNote/PriorityUpdate/WebRequestCustomer/...                                   |
 | HistoryComment              | Comentário livre para o histórico do chamado                                                                   |
 | __Opcionais__               |                                                                                                                |
 | From                        | Some Agent <email@example.com>                                                                                 |
@@ -552,7 +546,7 @@ Cria um artigo no chamado
 | InReplyTo                   | <asdasdasd.12@example.com>                                                                                     |
 | References                  | <asdasdasd.1@example.com><asdasdasd.12@example.com>                                                             |
 | NoAgentNotify               | Define se queremos evitar a notificação de usuários. O padrão é 0. Coloque 1 se desejar cancelar notificações. |
-| AutoResponseType            | auto reject|auto follow up|auto reply/new ticket|auto remove                                                   |
+| AutoResponseType            | auto reject/auto follow up/auto reply/new ticket/auto remove                                                   |
 | ForceNotificationToUserID   | Ids dos usuários que se deseja forçar uma notificação, separados por vírgula                                   |
 | ExcludeNotificationToUserID | Ids dos usuários que nã se deseja notificar, separados por vírgula                                             |
 
@@ -561,7 +555,7 @@ Define um novo cliente ou uma nova empresa parao chamado.
 
 | __Chave__      | __Valores Possíveis__              |
 |----------------|------------------------------------|
-| CustomerID     | Client124 (Código da Empresa)      |
+| CustomerID     | Client123 (Código da Empresa)      |
 | CustomerUserID | Client-user-123 (Login do Cliente) |
 
 *TicketLockSet*  
@@ -572,7 +566,7 @@ Bloqueia ou desbloqueia o chamado
 | Lock      | lock (para bloquear) ou unlock (para desbloquear) |
 
 *TicketOwnerSet*  
-Define um atendente como proprietário do chamado.
+Define um atendente como proprietário do chamado.  
 Apenas uma das chaves abaixo é necessária. 
 
 | __Chave__ | __Valores Possíveis__ |
@@ -590,7 +584,7 @@ apeas uma das chaves é necessária.
 | QueueID   | ID da Fila            |
 
 *TicketResponsibleSet*  
-Define o responsável do chamado.
+Define o responsável do chamado.  
 Apenas uma das chaves abaixo é necessária.
 
 | __Chave__   | __Valores Possíveis__ |
@@ -599,7 +593,7 @@ Apenas uma das chaves abaixo é necessária.
 | Responsible | ID do Responsável     |
 
 *TicketServiceSet*  
-Define o serviço do chamado.
+Define o serviço do chamado.  
 Apenas uma das chaves abaixo é necessária.
 
 | __Chave__  | __Valores Possíveis__ |
@@ -608,7 +602,7 @@ Apenas uma das chaves abaixo é necessária.
 | ServiceID  | ID do Serviço         |
 
 *TickeySLASet*  
-Define o SLA do chamado.
+Define o SLA do chamado.  
 Apenas umas das chaves abaixo é necessária.
 
 | __Chaves__ | __Valores Possíveis__ |
@@ -617,7 +611,7 @@ Apenas umas das chaves abaixo é necessária.
 | SLAID      | ID do SLA             |
 
 *TicketStateSet*  
-Define o estado do chamado.
+Define o estado do chamado.  
 Apenas uma das chaves abaixo é necessária.
 
 | __Chave__ | __Valores Possíveis__ |
@@ -633,7 +627,8 @@ Define o título do chamado.
 | Title     | Título do Chamado     |
 
 *TicketTypeSet*  
-Define o Tipo do Chamado.
+Define o Tipo do Chamado.  
+
 Apenas uma das chaves abaixo é necessária.
 
 | __Chave__ | __Valores Possíveis__ |

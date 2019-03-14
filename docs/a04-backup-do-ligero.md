@@ -6,7 +6,7 @@ Licenciamento deste Manual/Documento
 
 ### *Realizando Backups*
 
-O ligero traz consigo um utilitário de Backup que pode ser colocado para execução no Cron do Linux.
+O Ligero Smart traz consigo um utilitário de Backup que pode ser colocado para execução no Cron do Linux.
 
 O processo de execussão é simples:
 
@@ -27,12 +27,9 @@ Compress SQL-file ... done
 
 __Não utilizar a própria pasta do Ligero Smart para gerar backup.__
 
-Uma pasta será criada no diretório /diretorio/meus_backups, com a data e horário da realização do Backup, contendo 3 arquivos:
-
-Config.tar.gz - Contém arquivos de configuração
-
-Application.tar.gz - Contém todos os arquivos do sistema, inclusive os arquivos de configuração
-
+Uma pasta será criada no diretório /diretorio/meus_backups, com a data e horário da realização do Backup, contendo 3 arquivos:  
+Config.tar.gz - Contém arquivos de configuração  
+Application.tar.gz - Contém todos os arquivos do sistema, inclusive os arquivos de configuração  
 DatabaseBackup.sql.gz - Contém o Banco de Dados em formato SQL, compactado.
 
 ### *Restaurando Backups*

@@ -38,7 +38,7 @@ img
 
 ### Ajuste Necessário no MySql
 
-Ao instalar o Ligero e acessar o Gerenciador de Pacotes, é comum vermos a mensagem abaixo:
+Ao instalar o Ligero Smart e acessar o Gerenciador de Pacotes, é comum vermos a mensagem abaixo:
 
 img
 
@@ -46,14 +46,14 @@ img
 
 Esta alteração é necessária para permitir a instalação de alguns pacotes como por exemplo o Ligero ITMS.
 
-Para resolver isto, edite o arquivo /etc/mysql/my.cnf do seu servidor, ou /etc/my.cnf: 
-sudo vi /ect/mysql/my.cnf
-Altere a linha abaixo:
-max_allowed_packet  = 16M
-Para
-max_allowe_packet   = 20M
-E reinicia o serviço do mysql:
-sudo /etc/init.d/mysqld restart
+Para resolver isto, edite o arquivo /etc/mysql/my.cnf do seu servidor, ou /etc/my.cnf:  
+sudo vi /ect/mysql/my.cnf  
+Altere a linha abaixo:  
+max_allowed_packet  = 16M  
+Para  
+max_allowe_packet   = 20M  
+E reinicia o serviço do mysql:  
+sudo /etc/init.d/mysqld restart  
 
 ### Pacotes Verificados 
 
